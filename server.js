@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 // This is starting our express server
 var app = express(); 
 var PORT= process.env.PORT || 5000;
+app.use(express.static("public"))
 
 
 // Middleware for post req - JSON format
@@ -119,6 +120,6 @@ app.get('/api/users', function getAllUsers(request, repsonse) {
 
 
 // This is running the server in the port 5000
-app.listen('5000', function thisIsmyFuntion() { 
-    console.log(` Server runs awesome! click here ▶️  http://localhost:5000 `)
+app.listen(PORT, function thisIsmyFuntion() { 
+    console.log(` Server runs awesome! click here ▶️  http://localhost:` + PORT)
 } )
