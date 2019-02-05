@@ -8,7 +8,13 @@
   <title>Survey</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </head>
@@ -18,293 +24,134 @@
 
     <!-- Here is the start  -->
     <h1>Survey Questions</h1>
+    <!-- here we collect users info -->
+    <p>About you  </p>
     <hr>
 
-
-
-    <!-- here we collect users info -->
-    <h2>About you  </h2>
 
     <!-- We need to wrap everything in a <form> tag. so we can make a post request to our server -->
     
   <form>
 
-    
-    <h3> Name (required )</h3>
-    <input type="text">
-    <h3> Link to photo image (required )</h3>
-    <input type="text">
-    <hr>
-    <!-- Here it ends the user collection info -->
-    
-    <!-- Start 1   -->
-    <!-- here is our questions -->
-    <h2> Question 1 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
+
+
+      <p> What is your name ? </p>
+      <input type="text" id="name" size="40"><br>
       
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <option value=""></option>
-        <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-        
-      </div>
-    </div>
-    <br>
-    <!-- Here it ends our div -->
-    <!-- End  -->
+      <p> What is your email address ? </p>
+      <input type="text" id="email" size="40"><br>
+
+
+      <br>
+
+        <div class="form-group">
+            <label for="exampleFormControlSelect1"> Your mind is always buzzing with unexplored ideas and plans.</label>
+            <select class="form-control" id="a1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+              <label for="exampleFormControlSelect1">Generally speaking, you rely more on your experience than your imagination.? </label>
+              <select class="form-control" id="a2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">You find it easy to stay relaxed and focused even when there is some pressure.? </label>
+                <select class="form-control" id="a3">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                  <select class="form-control" id="a4">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                    <select class="form-control" id="a5">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                      <select class="form-control" id="a6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                        <select class="form-control" id="a7">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                          <select class="form-control" id="a8">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                            <select class="form-control" id="a9">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlSelect1">How often do you smile ? </label>
+                              <select class="form-control" id="a10">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+
+
+      <input type="button" id="submit" value="Submit">
+
     
+
     
-    <!-- Start 2 -->
-    <!-- here is our questions -->
-    <h2> Question 2 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <option value=""></option>
-        <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    
-    <!-- Start 3 -->
-    <!-- here is our questions -->
-    <h2> Question 3 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <option value=""></option>
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End  -->
-    
-    
-    <!-- Start 4 -->
-    <!-- here is our questions -->
-    <h2> Question 4 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <option value=""></option>
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End  -->
-    
-    
-    <!-- Start 5 -->
-    <!-- here is our questions -->
-    <h2> Question 5 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    <!-- Start 6 -->
-    <!-- here is our questions -->
-    <h2> Question 6 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-          <a class="dropdown-item" href="2">2</a>
-          <a class="dropdown-item" href="3">3</a>
-          <a class="dropdown-item" href="4">4</a>
-          <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    
-    <!-- Start 7 -->
-    <!-- here is our questions -->
-    <h2> Question 7 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-          <a class="dropdown-item" href="2">2</a>
-          <a class="dropdown-item" href="3">3</a>
-          <a class="dropdown-item" href="4">4</a>
-          <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    
-    <!-- Start 8 -->
-    <!-- here is our questions -->
-    <h2> Question 8 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-        <a class="dropdown-item" href="2">2</a>
-        <a class="dropdown-item" href="3">3</a>
-        <a class="dropdown-item" href="4">4</a>
-        <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    <!-- Start 9 -->
-    <!-- here is our questions -->
-    <h2> Question 9 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-          <a class="dropdown-item" href="2">2</a>
-          <a class="dropdown-item" href="3">3</a>
-          <a class="dropdown-item" href="4">4</a>
-          <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-    <!-- Start 10 -->
-    <!-- here is our questions -->
-    <h2> Question 10 </h2>
-    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid eveniet natus, error possimus, porro omnis
-      dolore mollitia illum voluptas modi impedit, ipsum excepturi tempore quibusdam dolores at itaque. Voluptates,
-      minima? </p>
-      
-      <!-- Here is our dropdown for our texts -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Dropdown button
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="1">1 (strongly Disagree)</a>
-          <a class="dropdown-item" href="2">2</a>
-          <a class="dropdown-item" href="3">3</a>
-          <a class="dropdown-item" href="4">4</a>
-          <a class="dropdown-item" href="5">5 (strongly Agree)</a>
-      </div>
-    </div>
-    <br>
-    
-    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
   </form>
     <hr>
     <a href="/api/list"> API friends list </a> | 
@@ -313,9 +160,50 @@
     <!-- End -->
     
   </div>
-</body>zs
+</body>
 
-<!-- Quick notes : 
-The <br> tag is a space tag --- It will make a small space between elements -->
+<script>
+      $("#submit").click(function() {
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var a1 = $("#a1").val();
+        var a2 = $("#a2").val();
+        var a3 = $("#a3").val();
+        var a4 = $("#a4").val();
+        var a5 = $("#a5").val();
+        var a6 = $("#a6").val();
+        var a7 = $("#a7").val();
+        var a8 = $("#a8").val();
+        var a9 = $("#a9").val();
+        var a10 = $("#a10").val();
+
+
+        $.post("/api/post/",
+        {
+          "name": name,
+          "email": email,
+          "a1": a1,
+          "a2": a2,
+          "a3": a3,
+          "a4": a4,
+          "a5": a5,
+          "a6": a6,
+          "a7": a7,
+          "a8": a8,
+          "a9": a9,
+          "a10": a10,
+        }, 
+        
+        function(data){
+          if(data==='done')
+            {
+              alert("success");
+            }
+        })
+        ;
+      });
+
+  </script>
 
 </html>
