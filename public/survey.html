@@ -1,209 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Survey</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-  
     <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-<body>
-  <div class="container">
+  <body>
+    <div class="container">
+      <!-- Here is the start  -->
+      <h1>Survey Questions</h1>
+      <!-- here we collect users info -->
+      <p>About you</p>
+      <hr />
 
-    <!-- Here is the start  -->
-    <h1>Survey Questions</h1>
-    <!-- here we collect users info -->
-    <p>About you  </p>
-    <hr>
+      <!-- We need to wrap everything in a <form> tag. so we can make a post request to our server -->
 
+      <form>
+        <p>What is your name ?</p>
+        <input type="text" id="name" size="40" /><br />
 
-    <!-- We need to wrap everything in a <form> tag. so we can make a post request to our server -->
-    
-  <form>
+        <p>What is your email address ?</p>
+        <input type="text" id="email" size="40" /><br />
 
-
-
-      <p> What is your name ? </p>
-      <input type="text" id="name" size="40"><br>
-      
-      <p> What is your email address ? </p>
-      <input type="text" id="email" size="40"><br>
-
-
-      <br>
+        <br />
 
         <div class="form-group">
-            <label for="exampleFormControlSelect1"> Your mind is always buzzing with unexplored ideas and plans.</label>
-            <select class="form-control" id="a1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
+          <label for="exampleFormControlSelect1">
+            Your mind is always buzzing with unexplored ideas and plans.</label
+          >
+          <select class="form-control" id="a1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
 
-          <div class="form-group">
-              <label for="exampleFormControlSelect1">Generally speaking, you rely more on your experience than your imagination.? </label>
-              <select class="form-control" id="a2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">You find it easy to stay relaxed and focused even when there is some pressure.? </label>
-                <select class="form-control" id="a3">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-              <div class="form-group">
-                  <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                  <select class="form-control" id="a4">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                    <select class="form-control" id="a5">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                      <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                      <select class="form-control" id="a6">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                        <select class="form-control" id="a7">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                          <select class="form-control" id="a8">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                            <select class="form-control" id="a9">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                            </select>
-                          </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlSelect1">How often do you smile ? </label>
-                              <select class="form-control" id="a10">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >Generally speaking, you rely more on your experience than your
+            imagination.?
+          </label>
+          <select class="form-control" id="a2">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >You find it easy to stay relaxed and focused even when there is
+            some pressure.?
+          </label>
+          <select class="form-control" id="a3">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a4">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a5">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a6">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a7">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a8">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a9">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1"
+            >How often do you smile ?
+          </label>
+          <select class="form-control" id="a10">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
 
+        <input type="button" id="submit" value="Submit" />
+      </form>
+      <hr />
+      <a href="/api/users"> API friends list </a> |
+      <a href="#"> Github repo </a>
+      <!-- Here it ends our div -->
+      <!-- End -->
+    </div>
+  </body>
 
-      <input type="button" id="submit" value="Submit">
+  <script>
+    $("#submit").click(function() {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var a1 = $("#a1").val();
+      var a2 = $("#a2").val();
+      var a3 = $("#a3").val();
+      var a4 = $("#a4").val();
+      var a5 = $("#a5").val();
+      var a6 = $("#a6").val();
+      var a7 = $("#a7").val();
+      var a8 = $("#a8").val();
+      var a9 = $("#a9").val();
+      var a10 = $("#a10").val();
 
-    
-
-    
-  </form>
-    <hr>
-    <a href="/api/list"> API friends list </a> | 
-    <a href="#"> Github repo </a>
-    <!-- Here it ends our div -->
-    <!-- End -->
-    
-  </div>
-</body>
-
-<script>
-      $("#submit").click(function() {
-
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var a1 = $("#a1").val();
-        var a2 = $("#a2").val();
-        var a3 = $("#a3").val();
-        var a4 = $("#a4").val();
-        var a5 = $("#a5").val();
-        var a6 = $("#a6").val();
-        var a7 = $("#a7").val();
-        var a8 = $("#a8").val();
-        var a9 = $("#a9").val();
-        var a10 = $("#a10").val();
-
-
-        $.post("/api/post/",
+      $.post(
+        "/api/users",
         {
-          "name": name,
-          "email": email,
-          "a1": a1,
-          "a2": a2,
-          "a3": a3,
-          "a4": a4,
-          "a5": a5,
-          "a6": a6,
-          "a7": a7,
-          "a8": a8,
-          "a9": a9,
-          "a10": a10,
-        }, 
-        
-        function(data){
-          if(data==='done')
-            {
-              alert("success");
-            }
-        })
-        ;
-      });
+          name: name,
+          email: email,
+          a1: a1,
+          a2: a2,
+          a3: a3,
+          a4: a4,
+          a5: a5,
+          a6: a6,
+          a7: a7,
+          a8: a8,
+          a9: a9,
+          a10: a10
+        },
 
+        function(data) {
+          alert(data.user);
+        }
+      );
+    });
   </script>
-
 </html>
